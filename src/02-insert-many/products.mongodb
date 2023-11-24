@@ -1,0 +1,150 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // eliminar los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+ {
+    _id: 1,
+    name: "Pelota para Perros",
+    price: 10,
+    description: "Pelota duradera perfecta para juegos activos con tu perro.",
+    category: "Juguetes",
+  },
+  {
+    _id: 2,
+    name: "Correa Retráctil",
+    price: 18,
+    description: "Correa retráctil para paseos cómodos y seguros con tu perro.",
+    category: "Accesorios",
+  },
+  {
+    _id: 3,
+    name: "Casita para Gatos",
+    price: 30,
+    description: "Casita acogedora con cojín suave para que tu gato descanse con estilo.",
+    category: "Camas",
+  },
+  {
+    _id: 4,
+    name: "Alimento Premium para Gatos",
+    price: 25,
+    description: "Comida nutritiva y deliciosa para mantener a tu gato saludable y feliz.",
+    category: "Alimentación",
+  },
+  {
+    _id: 5,
+    name: "Collar Brillante para Perros",
+    price: 15,
+    description: "Collar elegante con detalles brillantes para tu perro a la moda.",
+    category: "Accesorios",
+  },
+  {
+    _id: 6,
+    name: "Hueso dental para Perros",
+    price: 8,
+    description: "Hueso masticable que promueve la salud dental y alivia el estrés.",
+    category: "Juguetes",
+  },
+  {
+    _id: 7,
+    name: "Arnés Ajustable para Gatos",
+    price: 12,
+    description: "Arnés cómodo y ajustable para paseos seguros con tu gato.",
+    category: "Accesorios",
+  },
+  {
+    _id: 8,
+    name: "Arena Absorbente para Gatos",
+    price: 20,
+    description: "Arena de calidad premium que controla los olores y facilita la limpieza.",
+    category: "Higiene",
+  },
+  {
+    _id: 9,
+    name: "Comedero Automático para Mascotas",
+    price: 35,
+    description: "Comedero automático programable para mantener a tu mascota bien alimentada.",
+    category: "Accesorios",
+  },
+  {
+    _id: 10,
+    name: "Rascador de Cartón para Gatos",
+    price: 15,
+    description: "Rascador de cartón que satisface el instinto de rascar de tu gato.",
+    category: "Juguetes",
+  },
+  {
+    _id: 11,
+    name: "Alimento Balanceado para Perros",
+    price: 25,
+    description: "Comida nutritiva y equilibrada para perros de todas las edades y razas.",
+    category: "Alimentación",
+  },
+  {
+    _id: 12,
+    name: "Comida Húmeda para Gatos",
+    price: 15,
+    description: "Deliciosa comida húmeda con trozos de carne para satisfacer el paladar exigente de los gatos.",
+    category: "Alimentación",
+  },
+  {
+    _id: 13,
+    name: "Snacks para Perros",
+    price: 8,
+    description: "Snacks sabrosos y saludables para premiar a tu perro durante el entrenamiento.",
+    category: "Snacks",
+  },
+  {
+    _id: 14,
+    name: "Comida Especial para Conejos",
+    price: 12,
+    description: "Mezcla de alimentos diseñada para la dieta específica de conejos, rica en fibra y nutrientes.",
+    category: "Alimentación",
+  },
+  {
+    _id: 15,
+    name: "Alimento para Peces Tropicales",
+    price: 10,
+    description: "Escamas nutritivas para peces tropicales con ingredientes de alta calidad.",
+    category: "Alimentación",
+  },
+
+  // Juguetes para Mascotas
+  {
+    _id: 16,
+    name: "Pelota con Campana para Gatos",
+    price: 10,
+    description: "Pelota suave con campana para estimular el juego y la actividad física de tu gato.",
+    category: "Juguetes",
+  },
+  {
+    _id: 17,
+    name: "Juguete Masticable para Perros",
+    price: 18,
+    description: "Juguete duradero para perros que adoran masticar y jugar.",
+    category: "Juguetes",
+  },
+  {
+    _id: 18,
+    name: "Caña de Pescar para Gatos",
+    price: 12,
+    description: "Caña de pescar con plumas para estimular el instinto cazador de tu gato.",
+    category: "Juguetes",
+  },
+  {
+    _id: 19,
+    name: "Juguete Interactivo para Perros",
+    price: 20,
+    description: "Juguete interactivo que desafía la mente de tu perro mientras busca premios.",
+    category: "Juguetes",
+  },
+  {
+    _id: 20,
+    name: "Peluche Sonoro para Cachorros",
+    price: 15,
+    description: "Peluche suave con sonido para cachorros que adoran juguetear y morder.",
+    category: "Juguetes",
+  },
+])
