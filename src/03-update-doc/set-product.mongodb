@@ -1,0 +1,134 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+ 
+    {_id: 1},
+ 
+    {
+    $set: {
+      name: 'Comida para gato',
+      price: 15,
+      description: 'Nutritiva comida especialmente formulada para gatos.',
+      category: 'Alimentos',
+    }
+  }
+);
+
+db.products.updateOne(
+    {_id: 2},
+  
+    {
+    $set: {
+      name: 'Collar',
+      price: 55,
+      description: 'Elegante collar para mascotas con diseño duradero.',
+      category: 'Accesorios',
+    }
+  }
+);
+
+db.products.updateOne(
+  {_id: 3},
+  
+  {
+    $set: {
+      name: 'Pelota de salto',
+      price: 40,
+      description: 'Pelota diseñada para brindar horas de diversión y ejercicio para tu mascota.',
+      category: 'Juguetes',
+    }
+  }
+);
+
+db.products.updateOne(
+  {_id: 4},
+  
+  {
+    $set: {
+      name: 'Galletas para perros',
+      price: 20,
+      description: 'Deliciosas galletas nutritivas para perros de todas las razas y tamaños.',
+      category: 'Alimentos',
+    }
+  }
+);
+
+db.products.updateOne(
+  {_id: 5},
+  
+  {
+    $set: {
+      name: 'Cama decorada',
+      price: 70,
+      description: 'Cama cómoda y decorativa para que tu mascota descanse con estilo.',
+      category: 'Accesorios',
+    }
+  }
+);
+
+db.products.updateOne(
+  {_id: 6},
+  
+  {
+    $set: {
+      name: 'Collar Dorado',
+      price: 100,
+      description: 'Exclusivo collar dorado para perros que desean destacar.',
+      category: 'Accesorios',
+    }
+  }
+);
+
+db.products.updateOne(
+  {_id: 7},
+  
+  {
+    $set: {
+      name: 'Cepillo Electrico',
+      price: 25,
+      description: 'Cepillo eléctrico para un cepillado fácil y eficaz de la pelaje de tu mascota.',
+      category: 'Cuidado e Higiene',
+    }
+  }
+);
+
+db.products.updateOne(
+  {_id: 8},
+  
+  {
+    $set: {
+      name: 'Cama Acolchonada',
+      price: 35,
+      description: 'Cama acolchonada para proporcionar un sueño cómodo a tu mascota.',
+      category: 'Accesorios',
+    }
+  }
+);
+
+db.products.updateOne(
+  {_id: 9},
+  
+  {
+    $set: {
+      name: 'Coca para la Comida y el Agua',
+      price: 140,
+      description: 'Coca para proporcionar agua y comida a tu mascota de manera conveniente.',
+      category: 'Alimentos',
+    }
+  }
+);
+
+db.products.updateOne(
+  {_id: 10},
+  
+  {
+    $set: {
+      name: 'Casa para perros grandes',
+      price: 802,
+      description: 'Casa espaciosa y resistente diseñada para perros grandes.',
+      category: 'Accesorios',
+    }
+  }
+);
